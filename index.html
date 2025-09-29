@@ -9,37 +9,54 @@
       name="description"
       content="Creative Developer & Designer - Connect with me across the web"
     />
-    <meta name="generator" content="v0.app" />
 
-    <!-- Fonts -->
-    <link
-      rel="preload"
-      href="/_next/static/media/028c0d39d2e8f589-s.p.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/_next/static/media/5b01f339abf2f1a5.p.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Styles -->
-    <link
-      rel="stylesheet"
-      href="/_next/static/css/70b918d07e60eca7.css"
-      data-precedence="next"
-    />
+    <!-- Custom Theme Variables -->
+    <style>
+      :root {
+        --background: #0a0a0a;
+        --foreground: #ffffff;
+        --card: #1a1a1a;
+        --card-foreground: #ffffff;
+        --muted-foreground: #9ca3af;
+        --accent: #27272a;
+        --accent-foreground: #ffffff;
+        --border: #333333;
+      }
+
+      .bg-background {
+        background-color: var(--background);
+      }
+      .text-foreground {
+        color: var(--foreground);
+      }
+      .bg-card {
+        background-color: var(--card);
+      }
+      .text-card-foreground {
+        color: var(--card-foreground);
+      }
+      .text-muted-foreground {
+        color: var(--muted-foreground);
+      }
+      .bg-accent {
+        background-color: var(--accent);
+      }
+      .text-accent-foreground {
+        color: var(--accent-foreground);
+      }
+      .border-border {
+        border-color: var(--border);
+      }
+    </style>
   </head>
-  <body class="font-sans __variable_fb8f2c __variable_f910ec">
+  <body class="font-sans">
     <div class="min-h-screen bg-background flex items-center justify-center p-4">
       <div class="max-w-md w-full space-y-6">
         <!-- Profile Card -->
         <div
-          data-slot="card"
           class="text-card-foreground flex flex-col gap-6 rounded-xl border shadow-sm p-8 bg-card border-border text-center"
         >
           <div class="space-y-4">
@@ -50,7 +67,9 @@
             </div>
             <div>
               <h1 class="text-2xl font-bold text-foreground">VexCoder</h1>
-              <p class="text-muted-foreground">Gorilla Tag Copy Developer/Coder</p>
+              <p class="text-muted-foreground">
+                Gorilla Tag Copy Developer/Coder
+              </p>
             </div>
             <p class="text-sm text-muted-foreground leading-relaxed">
               im known in the gtag copy comm, i play and make gtag copies, top 10 project maker, top 6 coder.
@@ -64,7 +83,6 @@
             href="https://discord.com/users/vexcoder._."
             target="_blank"
             rel="noopener noreferrer"
-            data-slot="button"
             class="inline-flex items-center gap-2 rounded-md text-sm font-medium border shadow-xs px-4 py-2 w-full justify-start h-12 hover:bg-accent hover:text-accent-foreground bg-transparent transition-all"
           >
             <svg
@@ -88,7 +106,6 @@
             href="https://youtube.com/@vexcoder"
             target="_blank"
             rel="noopener noreferrer"
-            data-slot="button"
             class="inline-flex items-center gap-2 rounded-md text-sm font-medium border shadow-xs px-4 py-2 w-full justify-start h-12 hover:bg-accent hover:text-accent-foreground bg-transparent transition-all"
           >
             <svg
@@ -111,55 +128,6 @@
           </a>
         </div>
       </div>
-    </div>
-
-    <!-- Built with V0 badge -->
-    <div
-      id="v0-built-with"
-      style="
-        border: 1px solid hsl(0deg 0% 100% / 12%);
-        position: fixed;
-        bottom: 24px;
-        right: 24px;
-        z-index: 1000;
-        background: #121212;
-        color: white;
-        padding: 8px 12px;
-        border-radius: 8px;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        font-family: system-ui, sans-serif;
-      "
-    >
-      <a
-        href="https://v0.app/chat/api/open/built-with-v0/b_yvN5HcYhLYH"
-        target="_blank"
-        rel="noopener"
-        style="color: inherit; text-decoration: none; display: flex; gap: 4px"
-      >
-        Built with
-        <svg
-          fill="currentColor"
-          viewBox="0 0 147 70"
-          xmlns="http://www.w3.org/2000/svg"
-          style="width: 20px; height: 20px"
-        >
-          <path
-            d="M56 50.2031V14H70V60.1562C70 65.5928 65.5928 70 60.1562 70C57.5605 70 54.9982 68.9992 53.1562 67.1573L0 14H19.7969L56 50.2031Z"
-          />
-          <path
-            d="M147 56H133V23.9531L100.953 56H133V70H96.6875C85.8144 70 77 61.1856 77 50.3125V14H91V46.1562L123.156 14H91V0H127.312C138.186 0 147 8.81439 147 19.6875V56Z"
-          />
-        </svg>
-      </a>
-      <button
-        onclick="document.getElementById('v0-built-with').style.display='none'"
-        style="background:none;border:none;color:white;cursor:pointer;opacity:.7"
-      >
-        ✕
-      </button>
     </div>
   </body>
 </html>
